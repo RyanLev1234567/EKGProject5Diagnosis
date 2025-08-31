@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Overall body style with pastel pink background and comfortable padding */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7d6db; /* pastel pink */
+  color: #662f3d; /* dark pinkish text for good contrast */
+  padding: 2rem;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Page title */
+h1 {
+  color: #a53f56;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 1px 2px #f2b7bf;
+}
+
+/* Buttons with soft pastel pink background and subtle shadow */
+button {
+  font-size: 1.1rem;
+  padding: 0.6rem 1.4rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2b7bf;
+  color: #5a1f2a;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(194, 94, 108, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #e89ca8;
+  box-shadow: 0 4px 8px rgba(170, 70, 85, 0.6);
+  outline: none;
+}
+
+/* Output container styled with white background and pastel pink border */
+#output {
+  white-space: pre-wrap;
+  background: #fff5f7;
+  border: 2px solid #f2b7bf;
+  padding: 1rem;
+  width: 90%;
+  max-width: 800px;
+  height: 150px;
+  overflow-y: auto;
+  border-radius: 10px;
+  box-shadow: inset 0 0 8px #f8c9d0;
+  color: #8b3b4b;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Container for buttons below the output */
+#actions {
+  margin-bottom: 1rem;
+}
+
+/* Chart container with pastel pink border and slight shadow */
+#chartContainer {
+  width: 90%;
+  max-width: 820px;
+  border: 2px solid #f2b7bf;
+  border-radius: 12px;
+  background: #fff5f7;
+  padding: 1rem;
+  box-shadow: 0 0 12px #f3bcc6;
+}
+
+/* Canvas styling to blend nicely */
+canvas {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(194, 94, 108, 0.3);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive improvements */
+@media (max-width: 600px) {
+  #output, #chartContainer {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
